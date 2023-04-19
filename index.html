@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Encryptor</title>
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- javascript -->
+  <script src="main.js" defer></script>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <img src="./Imagenes/Vector.png">
+  </header>
+  <main class="main">
+
+    <!-- BLOQUE 1 -->
+    <section class="main__block1">
+      <textarea placeholder="Ingrese su texto aqui" id='textarea1' oninput="validar()"required></textarea>
+
+      <article class="block1__aviso">
+        <img src="./Imagenes/alerta.png"/>
+        <p>Solo letras minusculas y sin acentos</p>
+      </article>
+
+      <div class="container-buttons">
+        <button class="btn2" id="decryptButton" onclick="handleClick2('Encriptar')">
+          <span>Desencriptar</span>
+        </button>
+        <button class="btn1"  id="encryptButton" onclick="handleClick('Desencriptar')">
+          <span>Encriptar</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- BLOQUE 2 -->
+    <section class="main__block2">
+      <div class="container-textarea">
+        <div class="rectangle">
+          <img src="./Imagenes/Muñeco.png" alt="">
+        </div>
+        
+        <article class="warning" id="warningSection">
+          <p>Ningun mensaje fue encontrado</p>
+          <span>Ingresa un texto de desees encriptar o desencriptar.</span>
+        </article>
+
+          <div class="resultados" id="resultsSection">
+            <textarea id="textarea2"></textarea>
+            <button class="button" onclick="copiar()" id="copyButton">
+              <span>Copiar</span>
+            </button>
+          </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
