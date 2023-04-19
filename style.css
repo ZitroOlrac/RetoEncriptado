@@ -467,20 +467,21 @@ head{
 @media Screen and (max-width: 400px) {
    .header{
       position: absolute;
-      width: 375px;
-      height: 96px;
+      width: 25%; /* Cambiado de 100px a 25% */
+      height: auto; /* Cambiado de 96px a auto para mantener la proporción */
       left: 0px;
       top: 0px;
-   }
-  .header img{
+    }
+    
+    .header img{
       position: absolute;
-      left: 4.27%;
-      right: 87.2%;
+      left: 5%; /* Ajustado a un valor más pequeño */
+      right: 90%; /* Ajustado a un valor más pequeño */
       top: 25%;
       bottom: 25%;
       /* Dark blue/dark-blue-300 */
       background: #0A3871;
-   }
+    }
    .main .main__block1 textarea{
       position: absolute;
       width: 343px;
@@ -674,7 +675,7 @@ head{
       width: 343px;
       height: 595px;
       left: -16px;
-      top: -350   px;
+      top: -320px;
       /* White */
       background: #FFFFFF;
       box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
