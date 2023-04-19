@@ -673,8 +673,8 @@ head{
       position: absolute;
       width: 343px;
       height: 595px;
-      left: 16px;
-      top: 1096px;
+      left: -16px;
+      top: -350   px;
       /* White */
       background: #FFFFFF;
       box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
